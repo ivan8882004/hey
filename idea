@@ -1,0 +1,382 @@
+Fundamental Equity Portfolio Construction Framework
+
+1. Investment Philosophy
+
+The portfolio is constructed by combining fundamental analyst views with systematic quantitative signals. The final stock ratings determine investment direction (long or short), while a minimum-volatility optimizer determines the optimal position sizes subject to portfolio construction constraints.
+
+The philosophy is:
+
+* Analysts generate the alpha.
+* Quantitative valuation signals provide an additional objective input.
+* The optimizer does not forecast returns; it only minimizes portfolio risk while respecting the desired conviction structure.
+
+⸻
+
+2. Analyst Rating System
+
+Each analyst assigns an integer score from 1 to 5 for four independent dimensions.
+
+Category	Description
+SST	Super Short Term (monthly sales, monthly data, etc.)
+ST	Short Term (quarterly earnings, order intake, near-term catalysts)
+LT	Long Term (multi-year company outlook)
+Sector	Outlook for the company’s industry/sector
+
+Rating scale:
+
+Rating	Interpretation
+5	Very Bullish
+4	Bullish
+3	Neutral / No View
+2	Bearish
+1	Very Bearish
+
+If an analyst has no meaningful opinion, they should assign 3 (Neutral) rather than artificially forcing a positive or negative view.
+
+⸻
+
+3. Fundamental Rating Calculation
+
+Near-term rating
+
+\text{NearTerm}
+=
+0.6\times SST
++
+0.4\times ST
+
+The near-term outlook places greater emphasis on very recent information.
+
+⸻
+
+Long-term rating
+
+\text{LongTerm}
+=
+0.5\times LT
++
+0.5\times Sector
+
+This captures both company-specific and industry-level structural views.
+
+⸻
+
+Fundamental rating
+
+\text{Fundamental}
+=
+0.5\times NearTerm
++
+0.5\times LongTerm
+
+This represents the analyst’s overall assessment of the stock.
+
+⸻
+
+4. Quantitative Valuation Signal
+
+An independent quantitative score is constructed using valuation metrics such as:
+
+* EPS Growth
+* Earnings Yield (inverse of P/E ratio)
+
+The quantitative signal should be normalized onto the same 1–5 scale as the analyst ratings.
+
+⸻
+
+5. Final Stock Rating
+
+The final investment score combines the analyst view and quantitative valuation signal.
+
+\text{Final Rating}
+=
+0.7\times
+\text{Fundamental Rating}
++
+0.3\times
+\text{Quant Signal}
+
+The final score lies between 1 and 5.
+
+⸻
+
+6. Investment Direction
+
+Investment direction is determined solely by the final rating.
+
+Rating	Position
+> 3	Long
+< 3	Short
+2.5–3.5	Excluded
+
+Stocks within the neutral band are considered low-conviction ideas and are removed from the optimization universe.
+
+⸻
+
+7. Conviction Ranking
+
+After removing neutral names, the remaining universe is separated into:
+
+* Long candidates
+* Short candidates
+
+Each side is ranked independently by final rating.
+
+The strongest longs have the highest ratings.
+
+The strongest shorts have the lowest ratings.
+
+⸻
+
+8. Conviction Buckets
+
+Remaining stocks are divided into broad percentile buckets representing different conviction levels.
+
+An example configuration is:
+
+Bucket	Percentile
+Very High Conviction	Top 15%
+High Conviction	15%–35%
+Moderate Conviction	Remaining names
+
+Rather than fixing allocations exactly (e.g., 50/30/20), each bucket is assigned an allowable allocation range to provide flexibility.
+
+Example:
+
+Bucket	Gross Allocation Range
+Very High Conviction	45–55%
+High Conviction	25–35%
+Moderate Conviction	15–25%
+
+This allows the optimizer to adapt to changing market conditions while preserving the intended conviction hierarchy.
+
+⸻
+
+9. Position Size Constraints
+
+Different conviction levels receive different minimum and maximum position sizes.
+
+Example:
+
+Conviction	Min Weight	Max Weight
+Very High	1.0%	2.0%
+High	0.5%	1.5%
+Moderate	0.2%	1.0%
+
+This ensures that the highest-conviction ideas always receive meaningful allocations while preventing excessive concentration.
+
+⸻
+
+10. Portfolio Optimization
+
+The portfolio is obtained by solving a minimum-volatility optimization problem using the Barra covariance matrix.
+
+The objective is
+
+\min_w
+\;
+w^\top \Sigma w
+
+where
+
+* w is the portfolio weight vector
+* \Sigma is the Barra covariance matrix
+
+No expected return or alpha forecast is included in the objective function.
+
+Analyst conviction influences the solution entirely through the constraints.
+
+⸻
+
+11. Optimization Constraints
+
+The optimizer is subject to the following constraints.
+
+(a) Long/Short Direction
+
+* Rating > 3 → weight ≥ 0
+* Rating < 3 → weight ≤ 0
+
+The optimizer cannot reverse the analyst’s directional view.
+
+⸻
+
+(b) Gross Market Value
+
+Total gross exposure is fixed.
+
+\sum_i |w_i|
+=
+100\%
+
+Since the direction of every stock is predetermined, this can be implemented as
+
+\sum_i s_i w_i
+=
+100\%
+
+where
+
+* s_i=+1 for longs
+* s_i=-1 for shorts
+
+making the constraint linear.
+
+⸻
+
+(c) Bucket Gross Allocation
+
+Each conviction bucket must remain within its allocated gross exposure range.
+
+Example:
+
+* Very High Conviction: 45–55%
+* High Conviction: 25–35%
+* Moderate Conviction: 15–25%
+
+These ranges allow flexibility while ensuring that stronger ideas receive a larger share of the portfolio.
+
+⸻
+
+(d) Position Limits
+
+Every stock must satisfy its conviction-dependent minimum and maximum position size.
+
+For example,
+
+0.5\%
+\le
+|w_i|
+\le
+2.0\%
+
+depending on the bucket.
+
+⸻
+
+(e) Optional Net Exposure Constraint
+
+The portfolio is not required to be dollar neutral.
+
+Net long exposure is allowed.
+
+For example,
+
+0
+\le
+\sum_i w_i
+\le
+30\%
+
+or the optimizer may be left unconstrained on net exposure.
+
+⸻
+
+12. Beta Management
+
+Portfolio beta is not constrained within the optimizer.
+
+If necessary, portfolio beta is managed separately using index futures.
+
+This allows stock selection and market exposure decisions to remain independent.
+
+Advantages include:
+
+* preserving analyst conviction,
+* avoiding forced shorts solely for beta neutrality,
+* allowing tactical market positioning.
+
+⸻
+
+13. Dynamic Book Sizing
+
+The total size of the book may vary according to market conditions.
+
+Potential indicators include:
+
+* VIX or implied volatility spreads,
+* realized volatility,
+* 95% one-day Value-at-Risk,
+* other internal risk measures.
+
+Higher market volatility may lead to a smaller gross exposure, while calmer environments permit larger allocations.
+
+⸻
+
+14. Analyst Feedback System
+
+A visualization platform will be developed to provide analysts with feedback on:
+
+* historical performance of their ratings,
+* attribution of returns,
+* hit rate by rating level,
+* evolution of conviction over time.
+
+This improves consistency and accountability while helping analysts refine their research process.
+
+⸻
+
+15. Quantitative Risk Overlay
+
+Additional systematic filters may be applied independently of the optimizer.
+
+Examples include:
+
+* momentum filters,
+* trend-following signals,
+* liquidity screens,
+* risk-event exclusions.
+
+For example, stocks exhibiting strong negative momentum may be excluded from the quantitative portfolio, while analysts may still choose to hold them in discretionary books.
+
+⸻
+
+16. Overall Workflow
+
+Analyst Inputs
+(SST, ST, LT, Sector)
+            │
+            ▼
+Compute Fundamental Rating
+            │
+            ▼
+Compute Quant Valuation Signal
+            │
+            ▼
+70% Fundamental + 30% Quant
+            │
+            ▼
+Final Rating (1–5)
+            │
+            ▼
+Remove Neutral Stocks (2.5–3.5)
+            │
+            ▼
+Split into Longs and Shorts
+            │
+            ▼
+Rank by Conviction
+            │
+            ▼
+Assign Conviction Buckets
+            │
+            ▼
+Apply Bucket Allocation Ranges
+            │
+            ▼
+Apply Position Size Limits
+            │
+            ▼
+Minimum-Volatility Optimization
+(using Barra covariance matrix)
+            │
+            ▼
+Final Portfolio Weights
+            │
+            ▼
+Optional Beta Hedge via Index Futures
+            │
+            ▼
+Execution and Ongoing Risk Monitoring
+
+This framework cleanly separates alpha generation (analysts + quant signals) from risk management (minimum-volatility optimization). The optimizer does not decide which stocks to like or dislike; it determines the lowest-risk portfolio that best expresses the predefined conviction structure while satisfying practical portfolio constraints.
