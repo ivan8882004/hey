@@ -1,0 +1,264 @@
+# How to Pitch
+
+---
+
+## Page 2
+
+A clear pitch indicates clear thinking - Pen to paper - Structure and refine your argument
+
+Conviction will be conveyed as part of a good pitch
+
+Some believe conviction comes across more easily in a verbal pitch than in a document
+
+Brevity indicates a focus upon the key investment debate
+
+Pitch will indicate if thesis has been tied to the model—a good pitch will highlight specifics regarding the important model inputs or outputs
+
+Pen to paper - Structure and refine your argument
+
+Scrutinize supporting evidence
+
+Roadmap a complex event path
+
+---
+
+## Page 3
+
+1. Thesis- What are you playing for?- This is where you should put your elevator pitch
+
+2. Variant View
+- How do you vary vs. the street?- Evidence supports your view- View translates into key KPI differentiation
+
+3. Catalysts
+- Identifies the event path which will prove your thesis
+
+4. Risk
+- Where can I be wrong
+
+---
+
+## Page 4
+
+1. Thesis- What are you playing for?- This is where you should put your elevator pitch
+
+2. Idea & Price Target Summary
+Recommendation, conviction, duration etc. Price targets across cases, R/R & "how we get there"
+
+3. Variant View/Supporting Thesis Points
+3. Variant View/Supporting Thesis Points- This is the meat of your pitch on the 1-3 things that matter- Conclusion upfront! Give me the takeaway first and the direct KPI impact vs. street. Don't walk linearly through your research process- Make statements supported by evidence. We already know this is your educated opinion, no need to start every sentence with "in my opinion"- Present your evidence in a clear, concise and digestible manner- Summarize your variance with a table
+
+---
+
+## Page 5
+
+4. Catalysts & Event Path
+- How does the street come around to your view? How do we get paid?- Include the event, expected timing, expectation and impact to your thesis- Be sure to highlight those that are thesis defining vs. conviction tempering
+
+5. Risks
+- If you are wrong how will this play out?- What events will unfold, can you track the development of the risk case?- Where is the stock going?- Are there mitigants to each thesis point of the risk case?
+
+6. Appendix
+- Additional graphics / supporting analysis not embedded
+
+---
+
+## Page 6
+
+1) Thesis: This is your elevator pitch and sets the tone for the rest of what you discuss
+
+Your pitch is your way to synthesize all your research into a money generating idea, but if a tree falls in the forest with no one around, does it make a sound? That's why it's so crucial to be concise with your pitch and begin with your conclusion before you lose the audience.
+
+**Thesis:**
+
+Fundamental misunderstanding: Given the capital- intensive nature of the business, CAR needs to continuously seek funding for its fleet, causing fixed cost base to increase rapidly as new debt refinancing gets more expensive
+
+Interest Expense is aggressively mismodelled - rising rates and a slowing economy should cause the stock to retrate as true earnings power is destroyed. Sellside is stuck on the I/S and not thinking about the balance sheet impacts of their I/S projections Top- line and margins weaken because of travel and used car slowdowns, pressuring ability to generate returns
+
+**Short Thesis:**
+
+The market is overestimating the PINS' ability to grow ARPU: ad market saturation, price efficiency driven by large players, and structurally worse metrics in key customer segments will lead to slower than expected ARPU and Monetizable MAU growth.
+
+Re- rate to occur on multiple quarter earnings underperformance driven by ARPU that fails to converge towards peers.
+
+The CAR thesis makes it very clear that we're playing for a miss due to mismodeled interest expense and a softening travel market. The rest of the pitch can get into the details, but we already know how the analyst's research led to variance vs. the street.
+
+The PINS thesis highlights the key metric that is mismodeled (ARPU) and why. The analyst also notes that it won't just be numbers that fall (multiple as well).
+
+---
+
+## Page 7
+
+2a) Idea/Price Target Summary
+
+Price targets can be thought of in terms of probabilities while clearly defined trade durations help the PM understand what you're playing for.
+
+| Probability | Weighted Price Target | EPS | Forward P/E | Time Period | Target | % Up/Down |
+|---|---|---|---|---|---|---|
+| | $5.60 | 15.0x | FY24E | 84.00 | (64.6%) |
+| | $18.40 | 16.0x | FY24E | 294.40 | 24.2% |
+| | $1.17 | 25.0x | FY25E | 29.25 | (79.3%) |
+| Current Price | 236.98 | | | | |
+| Prob-Weighted Target | $141.65 | | | | |
+| % Up/Down | (40.2%) | | | | |
+| R/R | 2.66x | | | | |
+
+Trade Notes: 3- 6 month trade; we expect forward earnings estimates to bottom in 1H'23.
+
+---
+
+## Page 8
+
+2b) Idea/Price Target Summary
+
+PM teams approach valuation in different ways
+
+**Two Primary Valuation Methods:**
+
+**1. Relative Valuation - Multiples**
+- Determine the metric(s) that matter (e.g. P/E, EV / EBITDA, EV / FCF)- Look at multiple relative to the company's comps and to the company's historical multiple- Good for shorter term gauge of value
+
+**2. Intrinsic Valuation - DCF**
+- Very sensitive to inputs and terminal values- The value of any financial asset is the present value of the expected cash flows- Better as a longer-term gauge of value- Some teams use as a primary valuation method, others as a sanity check
+
+---
+
+## Page 9
+
+3) Variant View
+
+We're not going to highlight a bunch of supporting slides here, but we show an example of how an analyst explains what KPI in their model drives variance vs the street. This is where you explain how your model tells the story.
+
+**Variant Views:**
+
+V1: GM will stabilize in FY23 as software>comms growth (^+) slowing in penetration, shifting LT profitability/growth narratives Software segments have 40points higher GM than core messaging; should grow at 25% + over next 3 + yrs, counteracting margin deterioration in messaging business Segment + Flex + Engage are good products that are finally in position to be sold appropriately following sales comp alignment in 2H'22 Employees/ARR approaching high- growth peers; Sales comp incentives are now properly aligned Competitors are firing sales reps, while TWLO is investing
+
+V2: Applications of core messaging API are significantly more integral than modeled; expect core business topline to beat in ST 75% + of message volumes are used for authentication (OTP + 2FA) which should remain resistant in a downturn + benefits from secular tailwinds as 2FA adoption still relatively early on S- curve Readthroughs from competitors (AMPL, BRZE) suggest 18% 4Q topline growth guide is conservative
+
+---
+
+## Page 10
+
+4) Catalysts/Event Path
+
+It's great to have a view on a business and what happens to numbers, but just as important is figuring out how you will get paid. Highlighting the event path to others coming around to your view is crucial- these should be actual events with dates.
+
+**Catalysts:**
+
+3Q22 earnings call: upward revision to management's top- line guidance for FY2022, which currently still appears to be conservative. DOL's 3Q is modeled to track around +14.5% on a 3- year stack basis (vs. street at around +10% ). If DOL can maintain the 3Q comp, then the implied 4Q comp outlook would indicate a meaningful deceleration on a 3- year stack basis (700bps+ lower than 1H22 level), based on the FY22 topline growth outlook of +6.5 - 7.5% . 4Q22 earnings call: introduction of an optimistic outlook for next FY2023: 5 - 6% comp sales vs 4 - 5% normalized comp sale range. This would be the case as (1) DOL traffic continues to improve given compelling value proposition, and (2) impact of expanded price points rolled out in 2H22, which would lead to increase in traffic in later FY22 despite mgt's current conservative view that it would be immaterial. Read- through data from WMT (focusing on Canada segment), which reports before DOL.
+
+While we would have liked a date for WMT earnings (nit picking here), this is a very clear path (with specified events) for how we get paid as the analyst expects an upward revision to 2022 guidance next quarter along with an above trend initial 2023 SSS guidance in 4Q.
+
+---
+
+## Page 11
+
+5) Risks
+
+This shouldn't be an airtight thought where you put generic risks (macro, etc.), but rather a thoughtful way to be your own PM and think through how you could be wrong. Providing a mitigant to each risk shows you're truly considered key debates/risks in your recommendation.
+
+**Risks & Mitigants**
+
+Risk: PINS's ad outperform peer benchmarks driven by rising engagement, resulting in ARPU growth Mitigant: Pinterest's ad ROAS when adjusted for user engagement time and saturation (ad's displayed- per- user- time) still significantly trail peers. The tripology (Google, AMZN, FB) will continue optimizing their ad- suites and expand TAM focus (SMB) hurting PINS's prospects to converge to peer ARPU.
+
+Risk: PINS' foray into e- commerce drives significant growth with Bill Ready at the helm
+
+Mitigant: Engagement remains low vis- a- vis Instagram resulting in a disadvantageous position. E- commerce integration destroys the network moat that Pinterest would need to sustain long- term ARPU growth.
+
+Risk: Strong MAU and ARPU growth, especially exUS
+
+Mitigant: Growth in ROW is in primarily low GDP per capita countries and mMAUs remain low proportionally in Asia and ROW. US TAM is nearly saturated and Europe mMAU runway is coming to an end. This issue appears to be structural with FB and Twitter seeing similar trends.
+
+This risk analysis thought through various ways the analyst's thesis could be wrong and addressed why they don't see the risks as likely outcomes.
+
+---
+
+## Page 12
+
+6) Appendix
+
+This is self explanatory so we won't spend too much time or provide examples here, but the appendix can be utilized to provide some additional supporting data or product explanation (if it's something complex) that was completely essential to explaining your view.
+
+What the appendix shouldn't be is simply a repository for all of your research on the company.
+
+---
+
+## Page 13
+
+1. Give away the ending up front
+
+Long or short, price target and return, risk/reward skew, "time target", and summary of thesis
+
+2. Thesis is non-consensus, highly differentiated or multi-faceted
+
+Consider intellectual honesty and be wary of confirmation bias
+
+3. The degree to which you are variant on business model drivers is clear
+
+What is the Street missing, and to what degree are investors incorrect?
+
+4. Primary research is insightful and supports your fundamental thesis
+
+Describe the diligence that you've performed to build conviction in your view
+
+5. Catalysts are discrete dates that will confirm or refute your thesis
+
+When will investors be forced to come around to your view?
+
+6. Risk / Reward discussion appreciates a multiple range of outcomes
+
+Valuation helps inform the return (or loss) potential from the idea
+
+---
+
+## Page 14
+
+**Common Mistakes**
+
+**Analysts typically fall into these traps when articulating their ideas**
+
+**Presenting too much detail**
+
+**Presenting in chronological order**
+
+**Incorrect:**
+
+- Incorrect:
+- Wasting time with a business description that is too detailed
+- Discussing segments that do not matter to fundamentals or to share price
+
+**Correct:**
+
+Correct:
+- Allow the questions to take you into the details
+- Consider your pitch as the starting point of a more detailed conversation
+
+**Incorrect:**
+
+- Incorrect:
+- Walking through each step of the analysis and including irrelevant details
+- Finishing with the conclusion
+
+**Correct:**
+
+Correct:
+- Starting with conclusion (thesis statement)
+- Following with variant view and supporting detail from the model
+- Communicating event path
+
+---
+
+## Page 15
+
+- Your write up should be a concise outline of your thesis, variant view, event path, risks and valuation framework
+
+- This should not be a lengthy report. You need to identify the 2-3 points that are key to the thesis and spend most of the time finding supporting evidence or data to outline why you believe what you believe.
+
+- Properly format your charts & graphs. Axis labels, units, legend etc.
+
+- Cite your sources. This is extremely helpful for both the reader and yourself as you revisit old pitches and update various analyses
+
+- Your view should translate into the numbers in your model. If you think there are pricing or competitive issues this should translate into a material gross margin delta. You should be able to defend / benchmark why gross margins are going to a particular level over time. In general, if you have a long or short view on the stock it should translate into material downside or upside to a key KPI in the model.
+
+- You will likely need to find/incorporate data from various sources to support your view
+
+- Do not summarize sell side research. You can read sell side research after you determine your view and think through what you might have missed or need to consider. You can leverage the factual information, but you need to come up with your own view.
